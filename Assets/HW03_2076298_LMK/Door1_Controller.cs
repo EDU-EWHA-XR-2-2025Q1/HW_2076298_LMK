@@ -10,7 +10,7 @@ public class Door1_Controller : MonoBehaviour
     {
         float localZ = transform.InverseTransformPoint(other.transform.position).z;
         int status = (localZ > 0) ? 1 : 2;
-
+        
         animator.SetInteger("door1_status", status);
         
         animator.speed = 1f;
